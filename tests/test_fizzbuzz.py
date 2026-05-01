@@ -15,7 +15,8 @@ class TestFizzBuzz(unittest.TestCase):
         self.assertEqual(fizzbuzz(15),"FizzBuzz")
 
     def test_fizzbuzz_list_returns_100_items(self):
-        result = fizzbuzz_list(len(result),100)
+        result = fizzbuzz_list(100)
+        self.assertEqual(len(result),100)
         self.assertEqual(result[0],"1") #1
         self.assertEqual(result[2],"Fizz") # for values of 3
         self.assertEqual(result[4],"Buzz") # for values of 5
